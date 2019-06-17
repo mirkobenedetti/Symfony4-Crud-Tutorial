@@ -1,0 +1,39 @@
+<style>
+    th, td {
+        padding: 10px;
+    }
+    th {
+        text-align: right;
+    }
+</style>
+
+<h1>Create or Update Article:</h1>
+
+{{ form_start(form) }}
+
+<table>
+    <tbody>
+    <tr>
+        <th>Title:</th>
+        <td>{{ form_widget(form.title) }}</td>
+    </tr>
+    <tr>
+        <th>Author:</th>
+        <td>{{ form_widget(form.author) }}</td>
+    </tr>
+    <tr>
+        <th>Article Body:</th>
+        <td>{{ form_widget(form.body) }}</td>
+    </tr>
+    <tr>
+        <th>Homepage:</th>
+        <td>{{ form_widget(form.url) }}</td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>{{ form_widget(form.save) }}</td>
+    </tr>
+    </tbody>
+</table>
+
+{{ form_end(form) }}
