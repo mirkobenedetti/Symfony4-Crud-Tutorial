@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Article;
 use App\Form\ArticleType;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 
-use App\Entity\Article;
 
 class ArticleController extends AbstractController
 {
